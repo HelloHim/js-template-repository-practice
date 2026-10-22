@@ -1,10 +1,11 @@
-# js-template-repository-practice
+# js-webpack-starter-template
 
-I made this project to practise creating a GitHub template repository and setting up linting, formatting and bundling for a JavaScript project.
+My starter template for JavaScript projects bundled with Webpack. It comes with linting, formatting and a development server already set up, so you can start writing code straight away.
 
 ## What's included
 
-- **webpack**: bundles JavaScript, CSS and images from `src/` into `dist/`, with separate development and production configs
+- **webpack**: bundles JavaScript, CSS, images and fonts from `src/` into `dist/`, with separate development and production configs
+- **html-loader**: lets you import `.html` files into JavaScript and bundles any images they reference
 - **webpack-dev-server**: local dev server with live reloading
 - **ESLint**: catches problems in JavaScript code
 - **Prettier**: formats code consistently
@@ -12,7 +13,7 @@ I made this project to practise creating a GitHub template repository and settin
 
 ## Requirements
 
-- Node.js 20.11 or later
+- Node.js 22.22.1 or later
 
 ## Getting started
 
@@ -43,6 +44,9 @@ src/
   index.js          Entry point
   styles.css        Styles, imported in index.js
   template.html     HTML template used to generate dist/index.html
+.husky/
+  pre-commit        Runs lint-staged before each commit
+package.json        Project name, scripts and dependencies
 webpack.common.js   Shared webpack config
 webpack.dev.js      Development config (dev server, eval source maps)
 webpack.prod.js     Production config (minified, separate source maps)
