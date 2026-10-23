@@ -42,6 +42,7 @@ My starter template for JavaScript projects bundled with Webpack. It comes with 
 ```
 src/
   index.js          Entry point
+  reset.css         CSS reset, imported first in index.js
   styles.css        Styles, imported in index.js
   template.html     HTML template used to generate dist/index.html
 .husky/
